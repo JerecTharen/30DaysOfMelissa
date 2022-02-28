@@ -7,6 +7,9 @@ namespace _30DaysOfMelissa
     {
         static async Task Main(string[] args)
         {
+            int? msgCount = 1;
+            if (Int32.TryParse(Environment.GetEnvironmentVariable("3DM-MessageCount", EnvironmentVariableTarget.User), out int parseCount))
+                msgCount = parseCount;
             Console.WriteLine("Happy Birthday Mom!");
             var rm = new ReadEmail();
             var se = await StoreEmail.Init();
@@ -22,7 +25,7 @@ namespace _30DaysOfMelissa
             }
             if(Environment.GetEnvironmentVariable("3DM-SendSMS", EnvironmentVariableTarget.User) == "true")
             {
-                var dbMessages = await se.GetUnsentMail(1);
+                var dbMessages = await se.GetUnsentMail(msgCount);
                 dbMessages.ForEach(async msg =>
                 {
                     Console.WriteLine(msg.Message);

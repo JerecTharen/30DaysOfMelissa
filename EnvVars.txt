@@ -4,7 +4,8 @@
 3DM-PhoneNumber = <Phone number TO>
 3DM-SendSMS = <true/false>
 3DM-Mailbox = <Name of Label to get email from>
+3DM-DailyMessageCount = <Number of messages to send in a day>
 
-TwilioAccoundSID
+TwilioAccountSID
 TwilioAuthToken
 TwilioPhoneNumber = <Phone number FROM>
