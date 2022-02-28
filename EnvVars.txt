@@ -3,6 +3,7 @@
 3DM-Password = <Gmail app password>
 3DM-PhoneNumber = <Phone number TO>
 3DM-SendSMS = <true/false>
+3DM-Mailbox = <Name of Label to get email from>
 
 TwilioAccoundSID
 TwilioAuthToken

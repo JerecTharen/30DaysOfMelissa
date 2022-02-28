@@ -10,7 +10,7 @@ namespace _30DaysOfMelissa
     {
         private ImapClient _ic;
         private static readonly string _clientURL = "imap.gmail.com";
-        private static readonly string _mailbox = "TestMeJacob";
+        private static readonly string _mailbox = Environment.GetEnvironmentVariable("3DM-Mailbox", EnvironmentVariableTarget.User);
         private static int _characterLimit = 200;
         public ReadEmail()
         {
