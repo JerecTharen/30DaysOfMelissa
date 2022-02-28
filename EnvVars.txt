@@ -1,0 +1,9 @@
+﻿3DM-Email = <Email>
+3DM-GetMail = <true/false>
+3DM-Password = <Gmail app password>
+3DM-PhoneNumber = <Phone number TO>
+3DM-SendSMS = <true/false>
+
+TwilioAccoundSID
+TwilioAuthToken
+TwilioPhoneNumber = <Phone number FROM>
